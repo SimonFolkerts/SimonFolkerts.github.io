@@ -14,6 +14,11 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background: white;
+    /*background: -webkit-linear-gradient(red, yellow);*/
+    /*background: -o-linear-gradient(red, yellow);*/
+    /*background: -moz-linear-gradient(red, yellow);*/
+    background: linear-gradient(grey, #d3d3d3); /* Standard syntax */
 }
 
 nav ul {
@@ -39,11 +44,42 @@ nav ul {
     align-items: center;
     width: 30px;
     margin: 0 10px;
+    font-size: 20px;
 }
 
 .section-marker {
     margin: 0;
+    width: 25px;
+    height: 25px;
 }
+
+.section-marker:hover {
+    -webkit-transition-property:width, height, border;
+    transition-property: width, height, border;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+    background-color: ;
+}
+
+.marker-active {
+    cursor: default;
+    padding-left: 30%;
+    -webkit-transition-property:width, height, border, color;
+    transition-property: width, height, border, color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+    color: black;
+    border-left: 1px solid black;
+}
+
+.marker-inactive {
+    cursor: pointer;
+}
+
 
 /*########## Page Contents ##########*/
 #subject-summary {
@@ -90,7 +126,8 @@ nav ul {
     margin-right: -17px;
     padding-right: 17px;
     height: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .web-project-section {
@@ -118,4 +155,10 @@ nav ul {
 #project-summary ul {
     list-style: none;
     padding: 0;
+}
+
+/*Utilities*/
+
+.hidden {
+    display: none;
 }
