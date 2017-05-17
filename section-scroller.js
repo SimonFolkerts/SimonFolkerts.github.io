@@ -113,9 +113,6 @@ function showDescription(id) {
 }
 
 function checkSwitchDescription() {
-    console.log(done);
-    console.log(activeMarker);
-    console.log(oldMarker);
     if (activeMarker !== oldMarker && done) {
         done = false;
         $('#project-summary-' + oldMarker).stop().fadeOut(300, function () {
