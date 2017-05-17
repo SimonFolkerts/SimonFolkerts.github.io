@@ -81,9 +81,14 @@ $(".section-container").each(function (index) {
     $("#section-scroller").append('<a id="section-marker-' + (index + 1) + '" class="section-marker marker-inactive">' + inactiveText + '</a>')
 });
 
-$('.add-section-scroller').scroll(function (event) {
+$('.add-section-scroller').on('scroll', function (event) {
     updateMarkers(event.target);
-    showDescription(activeMarker);
+    checkSwitchDescription();
+});
+
+$('.add-section-scroller').on('scrollstop', function (event) {
+    updateMarkers(event.target);
+    checkSwitchDescription();
 });
 
 updateMarkers($('.add-section-scroller')[0]);
@@ -92,13 +97,30 @@ $('.summary').each(function () {
     $(this).fadeOut(0);
 });
 
+var done = true;
+oldMarker = 1;
+activeMarker = 1;
+showDescription(1);
+
 // OTHER STUFF
 
+function hideDescription(id) {
+    $('#project-summary-' + oldMarker).stop().fadeOut(300);
+}
+
 function showDescription(id) {
-    if (activeMarker !== oldMarker) {
-        $('.summary').each(function () {
-            $(this).fadeOut(300, function() {
-                $('#project-summary-' + id).fadeIn(300);
+    $('#project-summary-' + id).stop().fadeIn(300);
+}
+
+function checkSwitchDescription() {
+    console.log(done);
+    console.log(activeMarker);
+    console.log(oldMarker);
+    if (activeMarker !== oldMarker && done) {
+        done = false;
+        $('#project-summary-' + oldMarker).stop().fadeOut(300, function () {
+            done = true;
+            $('#project-summary-' + activeMarker).stop().fadeIn(300, function () {
             });
         });
 
