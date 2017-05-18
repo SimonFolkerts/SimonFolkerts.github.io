@@ -11,38 +11,89 @@
     <!--local resources-->
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <!--external resources-->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Josefin+Sans" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="page-container">
     <nav>
-        <ul>
-            <li>
-                <a>Student Work</a>
-            </li>
-            <li>
-                <a>Web</a>
-            </li>
-            <li>
-                <a>3D</a>
-            </li>
-            <li>
-                <a>Other</a>
-            </li>
-        </ul>
+        <h1 id="page-header">SIMON FOLKERTS</h1>
+        <!--<ul>-->
+        <!--<li>-->
+        <!--<a>Web</a>-->
+        <!--</li>-->
+        <!--&lt;!&ndash;<li>&ndash;&gt;-->
+        <!--&lt;!&ndash;<a>Other</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;</li>&ndash;&gt;-->
+        <!--&lt;!&ndash;<li>&ndash;&gt;-->
+        <!--&lt;!&ndash;<a>Other</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;</li>&ndash;&gt;-->
+        <!--</ul>-->
     </nav>
     <div id="page-contents">
-        <section id="subject-summary">
-            A collection of flagship projects created whilst studying at ACG Yoobee School of Design, Christchurch Campus
-        </section>
+        <!--<section id="subject-summary">-->
+        <!--A collection of flagship projects created whilst studying at ACG Yoobee School of Design, Christchurch Campus-->
+        <!--</section>-->
         <section id="project">
             <div id="section-scroller"></div>
             <div id="left" class="project__panel">
                 <div id="web-projects" class="add-section-scroller">
-                    <section id="section-container-1" class="web-project-section section-container">
-                        <a href="http://simon.folkerts.yoobee.net.nz/WE02/fttl/index.html"><img
-                                src="assets/images/fttl-laptop.png" alt="Fly to the Limit"></a>
+                    <section class="web-project-section section-container">
+                        <div class="project-link">
+                            <a target="none"
+                               href="http://simon.folkerts.yoobee.net.nz/WE06/SRB_DEV_2.0/web/index.php"><img
+                                    src="assets/images/srb-laptop.png" alt="SickRunBro"></a>
+                        </div>
+                        <div class="web-project-section__text">
+                            <h2>SickRunBro</h2>
+                            <p>Web application for social sharing of GPS enhanced action sport footage with
+                                augmented interface<br> - a collaboration with<br><a
+                                        href="https://mattvernal.github.io/">Matthew
+                                    Vernal</a></p>
+                        </div>
+                    </section>
+
+                    <section class="web-project-section section-container">
+                        <div class="project-link">
+                            <a class="project-link" target="none"
+                               href="http://simon.folkerts.yoobee.net.nz/WE04/folkerts-WE04/public_html/web/index.html"><img
+                                    src="assets/images/gamefinal-laptop.png" alt="Javascript Game"></a>
+                        </div>
+                        <div class="web-project-section__text">
+                            <h2>Simple Javascript Game Feature</h2>
+                            <p>A standalone Javascript game prototype using canvas and jQuery</p>
+                        </div>
+                    </section>
+
+                    <section class="web-project-section section-container">
+                        <div class="project-link">
+                            <a class="project-link" target="none"
+                               href="http://simon.folkerts.yoobee.net.nz/WE04/folkerts-WE04/public_html/web/index.html"><img
+                                    src="assets/images/game-laptop.png" alt="Javascript Game"></a>
+                        </div>
+                        <div class="web-project-section__text">
+                            <h2>Simple Javascript Game Development</h2>
+                            <p>Basic blog framework for a simple javascript game development process</p>
+                        </div>
+                    </section>
+
+                    <section class="web-project-section section-container">
+                        <div class="project-link">
+                            <a class="project-link" target="none"
+                               href="http://simon.folkerts.yoobee.net.nz/WE03/MellorCinemas/web/index.php?page=home&id=5"><img
+                                    src="assets/images/mellor-laptop.png" alt="Mellor Cinemas"></a>
+                        </div>
+                        <div class="web-project-section__text">
+                            <h2>Mellor Cinemas</h2>
+                            <p>Cinema website for viewing times and booking seats</p>
+                        </div>
+                    </section>
+
+                    <section class="web-project-section section-container">
+                        <div class="project-link">
+                            <a target="none" href="http://simon.folkerts.yoobee.net.nz/WE02/fttl/index.html"><img
+                                    src="assets/images/fttl-laptop.png" alt="Fly to the Limit"></a>
+                        </div>
                         <div class="web-project-section__text">
                             <h2>Fly to the Limit</h2>
                             <p>
@@ -51,62 +102,79 @@
                         </div>
                     </section>
 
-                    <section id="section-container-2" class="web-project-section section-container">
-                        <a href="http://simon.folkerts.yoobee.net.nz/WE03/MellorCinemas/web/index.php?page=home&id=5"><img
-                                src="assets/images/mellor-laptop.png" alt="Mellor Cinemas"></a>
-                        <div class="web-project-section__text">
-                            <h2>Mellor Cinemas</h2>
-                            <p>Cinema website for viewing times and booking seats</p>
-                        </div>
-                    </section>
-
-                    <section id="section-container-3" class="web-project-section section-container">
-                        <a href="http://simon.folkerts.yoobee.net.nz/WE04/folkerts-WE04/public_html/web/index.html"><img
-                                src="assets/images/game-laptop.png" alt="Javascript Game"></a>
-                        <div class="web-project-section__text">
-                            <h2>Simple Javascript Game Development</h2>
-                            <p>Basic blog framework for a simple javascript game development process</p>
-                        </div>
-                    </section>
-
-                    <section id="section-container-4" class="web-project-section section-container">
-                        <a href="http://simon.folkerts.yoobee.net.nz/WE04/folkerts-WE04/public_html/web/index.html"><img
-                                src="assets/images/gamefinal-laptop.png" alt="Javascript Game"></a>
-                        <div class="web-project-section__text">
-                            <h2>Simple Javascript Game Feature</h2>
-                            <p>A standalone Javascript game prototype using canvas and jQuery</p>
-                        </div>
-                    </section>
-                    <a href="http://www.freepik.com/free-photos-vectors/mockup">Mockup psd created by
+                    <a target="none" href="http://www.freepik.com/free-photos-vectors/mockup">Mockup psd created by
                         Aleksandr_samochernyi - Freepik.com</a>
                 </div>
 
             </div>
             <div id="right" class="project__panel">
                 <div id='center-border'>
-                    <section id="project-summary-1" class="summary">
-                        <h2>WE02 - Client Side Development</h2>
-                        <p>Demonstrate skill using client side scripting and web communication methods by
-                            creating a simple website to industry standards</p>
+
+                    <section class="summary">
+                        <h2>WE06 - Industry Project</h2>
+                        <p>Research, design, produce and maintain a dynamic web site or web application with all
+                            supporting documentation. Demonstrate a strong understanding of front end web scripting
+                            technologies,
+                            content delivery, design and usability which incorporates a range of advanced technical
+                            features.</p>
                         <h3>Technologies used:</h3>
                         <ul>
-                            <li>&lt;HTML&gt; and {CSS}</li>
+                            <li>&lt;HTML 5&gt; and {CSS}</li>
                             <br>
-                            <li>HTML 5 canvas</li>
+                            <li>&lt;canvas&gt;</li>
                             <br>
                             <li>Javascript();</li>
+                            <br>
+                            <li>$(jQuery)</li>
+                            <br>
+                            <li>$PHP and SQL</li>
                         </ul>
                     </section>
 
-                    <section id="project-summary-2" class="summary">
-                        <h2>WE03 - Server Side Development</h2>
-                        <p>Demonstrate skill using client side javascript and server side php to create a server based application
-                        making use of a database, queries and table joins to create a functional website</p>
+                    <section class="summary">
+                        <h2>WE04 - Interactive Client Side - Part 2</h2>
+                        <p>Demonstrate skill using client side javascript frameworks or other modern front end web
+                            technologies to create
+                            an interactive client side application</p>
                         <h3>Technologies used:</h3>
                         <ul>
-                            <li>&lt;HTML&gt; and {CSS}</li>
+                            <li>&lt;HTML 5&gt; and {CSS}</li>
                             <br>
-                            <li>HTML 5 canvas</li>
+                            <li>&lt;canvas&gt;</li>
+                            <br>
+                            <li>Javascript();</li>
+                            <br>
+                            <li>$(jQuery)</li>
+                        </ul>
+                    </section>
+
+                    <section class="summary">
+                        <h2>WE04 - Interactive Client Side - Part 1</h2>
+                        <p>Demonstrate skill using client side javascript frameworks or other modern front end web
+                            technologies to create
+                            an interactive client side application</p>
+                        <h3>Technologies used:</h3>
+                        <ul>
+                            <li>&lt;HTML 5&gt; and {CSS}</li>
+                            <br>
+                            <li>&lt;canvas&gt;</li>
+                            <br>
+                            <li>Javascript();</li>
+                            <br>
+                            <li>$(jQuery)</li>
+                        </ul>
+                    </section>
+
+                    <section class="summary">
+                        <h2>WE03 - Server Side Development</h2>
+                        <p>Demonstrate skill using client side javascript and server side php to create a server based
+                            application
+                            making use of a database, queries and table joins to create a functional website</p>
+                        <h3>Technologies used:</h3>
+                        <ul>
+                            <li>&lt;HTML 5&gt; and {CSS}</li>
+                            <br>
+                            <li>&lt;canvas&gt;</li>
                             <br>
                             <li>Javascript();</li>
                             <br>
@@ -114,33 +182,21 @@
                         </ul>
                     </section>
 
-                    <section id="project-summary-3" class="summary">
-                        <h2>WE04 - Interactive Client Side - Part 1</h2>
-                        <p>Demonstrate skill using client side javascript frameworks or other modern front end web technologies to create
-                        an interactive client side application</p>
+                    <section class="summary">
+                        <h2>WE02 - Client Side Development</h2>
+                        <p>Demonstrate skill using client side scripting and web communication methods by
+                            creating a simple website to industry standards</p>
                         <h3>Technologies used:</h3>
                         <ul>
-                            <li>&lt;HTML&gt; and {CSS}</li>
+                            <li>&lt;HTML 5&gt; and {CSS}</li>
                             <br>
-                            <li>HTML 5 canvas</li>
+                            <li>&lt;canvas&gt;</li>
                             <br>
                             <li>Javascript();</li>
                         </ul>
                     </section>
 
-                    <section id="project-summary-4" class="summary">
-                        <h2>WE04 - Interactive Client Side - Part 2</h2>
-                        <p>Demonstrate skill using client side javascript frameworks or other modern front end web technologies to create
-                            an interactive client side application</p>
-                        <h3>Technologies used:</h3>
-                        <ul>
-                            <li>&lt;HTML&gt; and {CSS}</li>
-                            <br>
-                            <li>HTML 5 canvas</li>
-                            <br>
-                            <li>Javascript();</li>
-                        </ul>
-                    </section>
+
                 </div>
             </div>
         </section>

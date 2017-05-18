@@ -78,7 +78,8 @@ function updateMarkers(target) {
 
 
 $(".section-container").each(function (index) {
-    $("#section-scroller").append('<a id="section-marker-' + (index + 1) + '" class="section-marker marker-inactive">' + inactiveText + '</a>')
+    $(this).attr("id", "section-container-" + (index + 1));
+    $("#section-scroller").append('<a id="section-marker-' + (index + 1) + '" class="section-marker marker-inactive">' + inactiveText + '</a>');
 });
 
 $('.add-section-scroller').on('scroll', function (event) {
@@ -113,7 +114,7 @@ function showDescription(id) {
 }
 
 function checkSwitchDescription() {
-    if (activeMarker !== oldMarker && done) {
+    if (activeMarker != oldMarker && done) {
         done = false;
         $('#project-summary-' + oldMarker).stop().fadeOut(300, function () {
             done = true;
